@@ -83,11 +83,11 @@ async def start_uploader(client: Client, message: Message, url: str, proc: Messa
     filename = get_file_name(url)
     os.rename(file, "./files/" + filename)
 
-    caption = f"🧿 **File :** `{filename}`"
+    caption = f"🧿 **Anime Name :** `{filename}`"
 
     t3 = time.time()
     await client.send_document(
-        chat_id="tititititititioooo",
+        chat_id="NineAnimeBackup",
         document="./files/" + filename,
         thumb="thumb.jpeg",
         caption=caption,
